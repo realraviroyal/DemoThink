@@ -1,0 +1,46 @@
+<div>
+    <h2>Space X Launch Program</h2>
+    </div>
+<div class="card-container">
+    <div class="card" *ngFor="let card of cardList">
+        <div class="card-content" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsPTsPAtRF2XJGUoa4tVnxGuImwMDz1W-bvg&usqp=CAU" alt="imag" class="card-image">
+            <table class="table-class">
+               
+                <tr>
+                    <td><b>{{card.mission_name}}</b></td>
+                  </tr>
+                <tr>
+                    <td><b>MissionID</b></td>
+                    <td>Smith</td>
+                  </tr>
+                  <tr>
+                    <td><b>Launch Year</b></td>
+                    <td>{{card.launch_year}}</td>
+                  </tr>
+                <tr>
+                    <td><b>Successful Launch</b></td>
+                    <td>{{card.launch_success}}</td>
+                  </tr>
+                  
+                  <tr>
+                    <td><b>Successful Landing</b></td>
+                    <td>Smith</td>
+                  </tr>
+                 
+              </table>
+        </div>
+    </div>
+    <!-- <div class="card">
+        
+
+    </div>
+    <div class="card">
+        
+
+    </div>
+    <div class="card">
+        
+
+    </div> -->
+</div>
