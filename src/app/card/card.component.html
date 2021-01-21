@@ -4,15 +4,15 @@
 <div class="card-container">
     <div class="card" *ngFor="let card of cardList">
         <div class="card-content" >
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsPTsPAtRF2XJGUoa4tVnxGuImwMDz1W-bvg&usqp=CAU" alt="imag" class="card-image">
+            <img [src]="card.links.mission_patch" alt="imag" class="card-image">
             <table class="table-class">
                
                 <tr>
-                    <td><b>{{card.mission_name}}</b></td>
+                    <td colspan="2"><b>{{card.mission_name}}</b></td>
                   </tr>
                 <tr>
                     <td><b>MissionID</b></td>
-                    <td>Smith</td>
+                    <td>{{card.mission_id}}</td>
                   </tr>
                   <tr>
                     <td><b>Launch Year</b></td>
@@ -25,22 +25,9 @@
                   
                   <tr>
                     <td><b>Successful Landing</b></td>
-                    <td>Smith</td>
+                    <td></td>
                   </tr>
-                 
               </table>
         </div>
     </div>
-    <!-- <div class="card">
-        
-
-    </div>
-    <div class="card">
-        
-
-    </div>
-    <div class="card">
-        
-
-    </div> -->
 </div>
